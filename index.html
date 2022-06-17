@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body >
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a class="nav__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
+                    <title>Academlo Logo</title>
+                    <g>
+                    <g>
+                        
+                        <path
+                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                        </path>
+                    </g>
+                    </g>
+                </svg>
+                STORE
+            </a>
+            <ul class="nav__list" >
+                <li class="nav__items"> <a class="nal__link" href="#">Home</a></li>
+                <li class="nav__items"> <a class="nal__link" href="#">Products</a></li>
+            </ul>
+            <div class="botones__nav">
+                <i class='bx bx-moon' id="moon"></i>
+                <i class='bx bx-sun' id="sun"></i>
+                <div id="open-cart">
+                    <i class='bx bx-shopping-bag' ></i>
+                    <span id="cart-count" class="count">0</span>
+                <i class='bx bx-grid-alt' id="menu"></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!--********     Mario Kart           ********-->
+    <div class="shopping-cart-overlay carrito" id="carrito">
+            <div id="cart-close">
+                <i class="bx bx-x "></i>
+            </div>
+            <h2 class="carro__title-center">My Cart</h2>
+            <div class="empty__container">
+                <img  src="./assets/images/empty-cart.png" id="empty">
+                <h2>Your cart is empty</h2>
+                <p>You can add items to your cart by clicking on the "+" button on the product page.</p>
+            </div>
+            <div class="carro__container">
+               
+            </div>
+    </div>
+    <!--*****************        Mario Kart      ******-->
+    
+    <div class="main__box" >
+        <div class="Big__img--container" >
+            <img src="./assets/images/home.png">
+        </div>
+        
+    </div>
+    <div class="home-data">
+        <h1 class="home-title">
+            New Sweatshirt
+            <br>
+            COLLECTIONS 2022
+        </h1>
+        <p class="home-description">
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.
+        </p>
+        <span class="home-price">$14.00</span>
+        <div class="home-btns">
+            <a href="#" class="button-small">Discover</a>
+            <button class="home-button">
+                ADD TO CART
+            </button>
+        </div>
+    </div>
+    <ul class="filtros">
+    <li class="all" data-filter="all" onclick="mostrarProductos(  )">
+        <h3 class="products__title">
+        Show All
+        </h3>
+        <span class="products__stock">
+        show all products
+        </span>
+    </li>
+
+    <li class="hoodies" data-filter=".hoodies"  onclick="mostrarProductos('hoodies' )">
+        <h3 class="products__title">
+        Hoodies
+        </h3>
+        <span class="products__stock">
+        1 products
+        </span>
+    </li>
+
+    <li class="shirts" data-filter=".shirts" onclick="mostrarProductos('shirts' )" >
+        <h3 class="products__title">
+        Shirts
+        </h3>
+        <span class="products__stock">
+        1 products
+        </span>
+    </li>
+
+    <li class="sweatshirts" data-filter=".sweatshirts" onclick="mostrarProductos('sweatshirts')">
+        <h3 class="products__title">
+        Sweatshirts
+        </h3>
+        <span class="products__stock">
+        2 products
+        </span>
+    </li>
+    </ul>
+    <div class="product__list">
+       
+    </div>
+
+
+
+
+    <footer class="footer section">
+        <div class="footer__container">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+                <ul class="footer__a">
+                    <li>Toluca - México</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+    
+                <ul class="footer__a">
+                <li>
+                    <a href="#" class="footer__a">Support Center</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__a">Customer Support</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__a">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__a">Copy Right</a>
+                </li>
+                </ul>
+            </div>
+    
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+    
+                <ul class="footer__a">
+                    <li>
+                        <a href="#" class="footer__a">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__a">Shirts</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__a">Sweatshirts</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__content">
+                <h3 class="footer__title" id="social">Social</h3>
+        
+                <ul  id="icons-footer ">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__icons" id="fb-icon"><i class="bx bxl-facebook"></i>
+                        </a>
+                    
+                        <a href="https://twitter.com/" target="_blank" class="footer__icons" id="twt-icon">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__icons" id="inst-icon">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    
+    <script src="./assets/JavaScript/main.js"></script>
+</body>
+</html>
+
